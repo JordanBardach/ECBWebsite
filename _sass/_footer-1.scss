@@ -1,0 +1,29 @@
+#footer {
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	background-color:#1D3553;
+	padding:60px 0px;
+
+	.footer-1-heading {
+		margin-top:5px;
+	}
+
+	p{
+		color: #8d9fb5;
+		line-height: 37px;
+		font-size:18px;
+	}
+	ul{
+		list-style: none;
+		margin-right:10px;
+		li{
+			padding-bottom:10px;
+			font-size:18px;
+			letter-spacing: 2px;
+		}
+	}
+
+	.secondary-footer {
+		background-color: #162436;
+	}
+}

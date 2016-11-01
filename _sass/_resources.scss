@@ -1,0 +1,172 @@
+#resources {
+	background-image: url('../images/background-hero.png');
+	background-size: cover;
+	background-position: 21% ;
+	min-height: 53vh;
+	color: $white;
+	position: relative;
+
+	.vh-center {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+		h1 {
+			letter-spacing: 2px;
+			font-size: 64px;
+			margin-bottom: 15px;
+		}
+
+		p{
+			font-size: 21px;
+			letter-spacing: 2px;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+	}
+}
+.header-segment {
+	margin-bottom: 25px;
+	.segment-logo {
+    float: left;
+    height: 55px;
+    margin-top: 5px;
+	}
+	h3 {
+    font-family: "Brevia";
+    margin-left: 20px;
+	}
+}
+
+.sidebar {
+	padding-left: 0;
+	h4 {
+		font-weight: 900;
+	}
+	.sidebar-links {
+		padding: 40px 0 40px 62px;
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			padding-top: 10px;
+			li {
+				padding-bottom: 15px;
+				font-weight: 400;
+				a {
+					color: black;
+					&:hover {
+						text-decoration: none;
+						border-bottom: 2px solid #A7CEF2;
+						padding-bottom: 3px;
+					}
+				}
+			}
+		}
+		&.links {
+			border-top: 1px solid #dadada;
+		}
+	}
+}
+
+.resources-links {
+	padding: 40px 0 40px 62px;
+}
+#resources-content  {
+	font-family: 'Open Sans', sans-serif;
+
+	h3{
+		font-weight: 300;
+	}
+	.resources-container {
+		margin-left:119px;
+	}
+
+	.office-locations {
+		padding:40px 0;
+	}
+
+	img {
+		margin-bottom :50px;
+	}
+
+	.address{
+		margin-bottom:30px;
+	}
+
+	/*h4{
+		margin-top: 40px;
+		margin-bottom: 30px;
+		
+		}*/
+		p{
+			line-height: 30px;
+			font-size: 15px;
+
+		}
+		.alphabets {
+
+			padding-left:0;
+
+			ul{
+				list-style: none;
+				margin-bottom:20px;
+
+
+
+				li {
+					display:inline-block;
+					background-color: #F1F8FE;
+					width:50px;
+					text-align: center;
+					height:50px;
+					padding-top:16px;
+					margin-right:10px;
+
+				}
+			}
+		}
+		.links-heading {
+			border-top: 1px solid #dadada;
+		}
+		.links {
+			border-top: 1px solid #dadada;
+		}
+
+		.office-locations {
+			border-right:1px solid #dadada;
+			min-height:250vh;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		#resources {
+			h1 {
+				letter-spacing: 1px;
+				font-size: 40px !important;
+				margin-bottom: 12px;
+			}
+
+			p{
+				font-size: 18px;
+				letter-spacing: 1px;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+
+		#resources-content {
+			.resources-container {
+				margin-left:20px;
+
+				.resources-links {
+					padding:20px;
+				}
+			}
+
+			.office-locations {
+				min-height:100vh;
+				border:0;
+				padding:0;
+			}
+		}
+	}
+

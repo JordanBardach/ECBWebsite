@@ -1,0 +1,37 @@
+
+$font-name: "Brevia";
+$font-path-file-name: '../fonts/BreviaW01Light';
+
+
+@font-face {
+	font-family: $font-name;
+	font-weight: normal;
+	font-style: normal;
+	src: url($font-path-file-name+'.eot'); /* IE9 Compat Modes */
+	src: url($font-path-file-name+'.woff') format('woff'), /* Pretty Modern Browsers */
+	url($font-path-file-name+'.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url($font-path-file-name+'.svg') format('svg'); /* Legacy iOS */;
+
+}
+body {
+	font-family:$font-name;
+	font-weight: lighter;
+	*:focus{
+		outline:none;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+.custom-container {
+    width: 1250px;
+    margin: 0 auto;
+}
+}
+
+
+::-webkit-input-placeholder { color:#444; font-size: 22px; font-weight:400;font-family: 'Open Sans', sans-serif; position: relative; top:3px;}
+::-moz-placeholder { color:#444; font-size: 22px; font-weight:400;font-family: 'Open Sans', sans-serif; padding-top:2px;} /* firefox 19+ */
+:-ms-input-placeholder { color:#444; font-size: 22px; font-weight:400;font-family: 'Open Sans', sans-serif; padding-top:2px;} /* ie */
+input:-moz-placeholder { color:#444;font-weight:lighter;	font-size: 22px;font-weight:400;font-family: 'Open Sans', sans-serif; padding-top:2px;}

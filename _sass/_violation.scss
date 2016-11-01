@@ -1,0 +1,95 @@
+#violation {
+	background-image: url('../images/background-section.png');
+	background-size: cover;
+	background-position: 21% ;
+	color: #fff;
+	padding:80px 0px 120px 0px ;
+
+	h1 {
+		letter-spacing: 2px;
+		font-size: 40px;
+	}
+
+	p {
+		font-size:19px;
+		margin-bottom:40px;
+		letter-spacing: 2px;
+	}
+
+	ul {
+		list-style: none;
+		margin-top:23px;
+		li {
+			display:inline;
+			padding-right:15px;
+
+			a {
+				letter-spacing: 2px;
+				&:hover{
+					background-color:$white;
+					color:#000;
+				}
+			}
+		}
+
+	}
+
+	.violation-btn{
+		padding:15px 55px;
+		
+		color:#fff;
+		font-size:20px;
+		border-radius: 50px;
+		border:1px solid $white;
+	}
+
+	.violation-row {
+		margin-top:20px
+	}
+	
+}
+
+
+@media only screen and (max-width: 768px) {
+	#violation {
+		padding-top:15px;
+		padding-bottom:15px;
+
+		p {
+			margin-bottom: 15px;
+		}
+		ul {
+			li {
+				margin-bottom: 5px;
+				display:block;
+
+			}
+		}
+	}
+	.violation-btn {
+		margin-bottom: 17px;
+		font-size:14px !important;
+	}
+	.permit-btn {
+		padding-right:15px !important;
+	}
+}
+
+/*@media only screen and (max-width: 979px) {
+	#violation {
+		ul {
+			li {
+				margin-bottom: 5px;
+				display:block;
+
+			}
+		}
+	}
+	.violation-btn {
+		margin-bottom: 17px;
+		font-size:14px !important;
+	}
+	.permit-btn {
+		padding-right:15px !important;
+	}
+}*/

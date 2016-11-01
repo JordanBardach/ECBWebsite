@@ -1,0 +1,168 @@
+#glossary {
+	background-image: url('../images/background-hero.png');
+	background-size: cover;
+	background-position: 21% ;
+	min-height: 53vh;
+	color: #fff;
+	position: relative;
+
+	.vh-center {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+		h1 {
+			letter-spacing: 2px;
+			font-size: 64px;
+			margin-bottom: 15px;
+		}
+
+		p{
+			font-size: 21px;
+			letter-spacing: 2px;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+	}
+}
+
+#glossary-content  {
+	font-family: 'Open Sans', sans-serif;
+	.glossary-container {
+		margin-left:119px;
+	}
+
+	.glossary-column {
+		border-right:1px solid #dadada;
+		padding:20px 60px 20px 0;
+	}
+
+	.strike {
+		display: block;
+		text-align: left;
+		overflow: hidden;
+		white-space: nowrap;
+		margin-top: 30px; 
+		margin-bottom: 32px;
+	}
+
+	.strike > span {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.strike > span:before,
+	.strike > span:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		width: 9999px;
+		height: 1px;
+		background: #dadada;
+	}
+
+	.strike > span:before {
+		right: 100%;
+		margin-right: 15px;
+	}
+
+	.strike > span:after {
+		left: 100%;
+		margin-left: 15px;
+	}
+
+	.alphabet-circle {
+		padding: 13px 20px;
+		border: 2px solid $green;
+		border-radius: 50%;
+		color: $green;
+	}
+
+
+	p{
+		line-height: 30px;
+		margin-bottom:45px;
+		font-size: 17px;
+	}
+	.alphabets {
+		padding-left:0px;
+
+		h4{
+			margin-top: 40px;
+			margin-bottom: 28px;
+			padding-left: 40px;
+			font-weight: 900;
+		}
+		
+		ul{
+			list-style: none;
+			margin-bottom:20px;
+			li {
+				display:inline-block;
+				background-color: #F1F8FE;
+				width:50px;
+				text-align: center;
+				height:50px;
+				padding-top:16px;
+				margin-right:10px;
+				font-weight: bold;
+
+			}
+		}
+	}
+	.links-heading {
+		border-top: 1px solid #dadada;
+	}
+	.links {
+		p {
+	    margin-bottom: 4px;
+	    padding-left: 40px;
+	    font-size: 16px;
+	    font-weight: 400
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#glossary {
+		min-height: 50vh;
+
+
+
+		.vh-center {
+			position: static;
+			top: 0;
+			transform: translateY(0%);
+
+			h1 {
+				letter-spacing: 1px;
+				font-size: 40px !important;
+				margin-bottom: 12px;
+			}
+
+			p{
+				font-size: 18px;
+				letter-spacing: 1px;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+	}
+	#glossary-content {
+		padding-left: 10px;
+		.alphabets {
+			ul{
+				padding-left:18px;
+
+				li {
+					margin-right:6px;
+				}
+			}
+		}
+
+
+		.glossary-container {
+			margin-left:10px;
+		}
+	}
+
+}

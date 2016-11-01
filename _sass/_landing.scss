@@ -1,0 +1,130 @@
+	#landing {
+		background-image: url('../images/background-hero.png');
+		background-size: cover;
+		background-position: 21% ;
+		min-height: 100vh;
+		color: #fff;
+		position: relative;
+		padding-top: 25px;
+
+		.vh-center {
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+
+			
+			
+			h1 {
+				letter-spacing: 5px;
+				font-size: 63px;
+				margin-bottom:15px;
+			}
+			p{
+				font-size: 21px;
+				text-align: center;
+				margin-bottom:45px;
+				letter-spacing: 1px;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+
+		input {
+
+			border-radius: 0;
+			background-color: $gray;
+			border-color:transparent;
+			width: 100%;
+			padding: 16px 20px 20px 20px;
+			display:inline-block;
+			color:#444; 
+			font-size: 20px; 
+			font-weight:400;
+			font-family: 'Open Sans', sans-serif;
+
+
+		}
+
+		.btn-home {
+			padding:21px 20px;
+			border-radius:0px;
+			width:45%;
+			display: inline-block;
+			font-size:19px;
+			letter-spacing: 5px;
+			font-weight: bold;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.or-text {
+			position: relative;
+			left: 20px;
+			font-size: 19px;
+			font-weight: bold;
+		}
+
+		.green {
+			background-color: $green;
+			color: $white;
+			border-color: $green;
+		}
+
+		.blue {
+			background-color: $blue;
+			color: $white;
+			border-color: $blue;
+		}
+
+		.mar-20 {
+			margin-bottom: 35px;
+		}
+
+	
+
+	}
+
+	@media only screen and (max-width: 768px) {
+		#landing {
+			min-height: 100vh;
+			padding-top: 0px;
+			padding-bottom: 40px;
+
+			.btn-home {
+				letter-spacing: 1px;
+			}
+
+			.or-text {
+				display: none !important;
+			}
+			.enter-address {
+				margin-bottom :20px;
+
+			}
+			.vh-center {
+				position: static;
+				top: 0;
+				transform: translateY(0%);
+
+				h1{
+					font-size: 48px;
+				} 
+
+				p {
+					font-size: 18px;
+				}
+
+				.btn-home {
+					font-size: 15px;
+					padding:12px;
+				}
+				
+			}
+		}
+
+	}
+
+	
+
+	
+
+

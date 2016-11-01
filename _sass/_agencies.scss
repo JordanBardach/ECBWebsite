@@ -1,0 +1,37 @@
+#agencies {
+	padding:100px 0px;
+
+	h1{
+		margin-bottom:100px;
+		letter-spacing: 1px;
+		line-height: 50px;
+		font-size: 41px;
+	}
+	.agency-row {
+		margin-top:40px;
+
+		.nyc-black-img-col {
+			padding-left:32px;
+		}
+
+	}
+	.agency-img {
+		height:110px;
+	}
+
+	p {
+			margin-bottom:30px;
+			font-size:19px;
+		}
+}
+
+@media only screen and (max-width: 768px) {
+	#agencies {
+		padding-top:20px;
+		h1{
+		margin-bottom:10px;
+	}
+	
+	}
+	
+}
