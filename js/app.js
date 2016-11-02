@@ -23,6 +23,23 @@ $( document ).ready(function() {
     });
   }
 
+  $(".search").click(function(){
+    var boro_no = $('#borough-select').val();
+    var house_no = $('#house-no').val();
+    var street = $('#street').val();
+    var params = { 
+      boro: boro_no,
+      houseno: house_no,
+      street: street
+    }
+
+    var url = "http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?" + $.param(params)
+
+    var redirectWindow = window.open(url, '_blank');
+    redirectWindow.location;
+  });
+
+
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
