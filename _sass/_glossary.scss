@@ -35,6 +35,8 @@
 	.glossary-column {
 		border-right:1px solid #dadada;
 		padding:20px 60px 20px 0;
+    max-height: 900px;
+    overflow-y: scroll;
 	}
 
 	.strike {
