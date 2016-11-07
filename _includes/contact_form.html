@@ -1,78 +1,70 @@
 <div class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog modal-contact">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
       </div>
       <div class="modal-body">
-
         <div class="vh-center">
           <div class="container">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <div class="row">
-
-              <div class="col-md-offset-2 col-md-8 col-xs-12">
-
-               <h1 class="text-center">New York St, NY, 123 456 - <span>edit</span></h1>
-               <p>Enter the details below to get the advice from your team</p>
-               <div class="row mar-20 " >
-                <div class="col-md-6 col-xs-12 enter-address">
-                  <input type="text" placeholder="Name" >
-                </div>
-                <div class="col-md-6 col-xs-12">
-                  <input type="text" placeholder="Phone" >
-                </div>
-              </div>
-              <div class="row mar-20 " >
-                <div class="col-md-6 col-xs-12 enter-address">
-                  <input type="text" placeholder="Email">
-                </div>
-                <div class="col-md-6 col-xs-12">
-                  <select name="cars">
-                    <option value="Homeowner">Homeowner</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-              </div>
-              <hr class="hr-custom">
-              <div class="row mar-20 " >
-                <div class="col-md-6 col-xs-12 ">
-                  <div class="violation-input">
-                  <input type="text" placeholder="Violation Number"  class="mar-20 mar-small">
-                  <input type="text" placeholder="Violation Number"    class="mar-20 mar-small">
-                  
+              <form id="demo-form" role="form" action="https://getsimpleform.com/messages?form_api_token=86adb26b622327bfe01b8ea8421e4499" method="post" enctype="multipart/form-data">
+                <div class="col-md-offset-2 col-md-8 col-xs-12">
+                  <input type="hidden" name="redirect_to" value="https://getsimpleform.com/demo#thank-you">
+                  <h1 class="text-center">New York St, NY, 123 456 - <span>edit</span></h1>
+                  <p>Enter the details below to get the advice from your team</p>
+                  <div class="row mar-20 " >
+                    <div class="col-md-6 col-xs-12 enter-address">
+                      <input type="text" placeholder="Name" name="name">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                      <input type="text" placeholder="Phone" name="phone">
+                    </div>
                   </div>
-                  <p class="add-btn"><a href="#" class="btn"><span>+ </span>Add another</a></p>
-                </div>
-                <div class="col-md-6 col-xs-12 ">
-                  <div class="drag_file text-center">
-                    <i class="fa fa-upload fa-2x " aria-hidden="true"></i>
-                    <p>Drag and drop here to <br>upload files</p>
-                    <p>or browse</p>
-
+                  <div class="row mar-20 " >
+                    <div class="col-md-6 col-xs-12 enter-address">
+                      <input type="text" placeholder="Email" name="email">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                      <select name="role">
+                        <option value="Homeowner">Homeowner</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr class="hr-custom">
+                  <div class="row mar-20 " >
+                    <div class="col-md-6 col-xs-12 ">
+                      <div class="violation-input">
+                        <input type="text" placeholder="Violation Number"  class="mar-20 mar-small" name="violation-1">
+                        <input type="text" placeholder="Violation Number"  class="mar-20 mar-small" name="violation-2">
+                        <input type="file" name="avatar" class="form-control">
+                      </div>
+                      <p class="add-btn"><a href="#" class="btn"><span>+ </span>Add another</a></p>
+                    </div>
+                    <div class="col-md-6 col-xs-12 ">
+                      <div class="drag_file text-center">
+                        <i class="fa fa-upload fa-2x " aria-hidden="true"></i>
+                        <p>click here to <br>choose files</p>
+                        <p>to upload</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mar-20" >
+                    <div class="col-md-12 col-xs-12 text-center ">
+                       <input class="btn btn-default btn-home blue" type='submit' value='SEND' />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="row mar-20 " >
-                <div class="col-md-12 col-xs-12 text-center ">
-                  <a href="" class="btn btn-default btn-home blue" >SEND</a>
-                </div>
-                
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
- 
     </div>
-
   </div>
-
-</div>
-</div>
-
 </div>
