@@ -55,4 +55,19 @@ $( document ).ready(function() {
       }
     });
   });
+
+  String.prototype.trunc = String.prototype.trunc || function(n) {
+    if (this.length > n) {
+      return this.substr(0, n - 1) + "...";
+    } else {
+      return this;
+    }
+  };
+
+  $(".file-uploader").change(function() {
+    var txt;
+    debugger
+    txt = $(this).val().split('\\').pop();
+    $('.chosen-file').html(txt);
+  });
 });
