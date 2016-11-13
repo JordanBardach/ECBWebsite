@@ -35,6 +35,12 @@
 				letter-spacing: 1px;
 			}
 
+			.chosen-file {
+			  text-align: left;
+			  font-size: 13px;
+			  margin-top: 10px;
+			}
+			
 			input,select {
 
 				border-radius: 0;
@@ -111,9 +117,18 @@
 		font-weight: 100;
 		font-size: 17px;
 		padding:40px;
+		position: relative;
 
 		p{
 			margin:10px !important;
+		}
+		.file-uploader {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    opacity: 0;
+	    height: 100% !important;
+	    cursor: pointer;
 		}
 	}
 

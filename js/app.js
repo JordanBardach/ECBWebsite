@@ -4,10 +4,11 @@ $( document ).ready(function() {
       top: 760
     }
   });
-  count=3
+  var count=3
 
   $(".add-btn").click(function(){
-    $(".violation-input").append('<input type="text" placeholder="Violation Number"  name="violation" class="mar-20 mar-small" id=' + '"violation-' + count + '">' )
+    $(".violation-input").append('<input type="text" placeholder="Violation Number" class="mar-20 mar-small" name=' + '"violation-' + count + '">' )
+    count = count+1;
   });
 
   var path = window.location.pathname
@@ -53,5 +54,20 @@ $( document ).ready(function() {
         }
       }
     });
+  });
+
+  String.prototype.trunc = String.prototype.trunc || function(n) {
+    if (this.length > n) {
+      return this.substr(0, n - 1) + "...";
+    } else {
+      return this;
+    }
+  };
+
+  $(".file-uploader").change(function() {
+    var txt;
+    debugger
+    txt = $(this).val().split('\\').pop();
+    $('.chosen-file').html(txt);
   });
 });
