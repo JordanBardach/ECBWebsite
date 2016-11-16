@@ -32,11 +32,17 @@
 		margin-left:119px;
 	}
 
+
+
+	#scroll-content {
+		height:600px;
+		overflow-y:scroll;
+		position:relative;
+	}
+
 	.glossary-column {
 		border-right:1px solid #dadada;
 		padding:20px 60px 20px 0;
-    max-height: 900px;
-    overflow-y: scroll;
 	}
 
 	.strike {
@@ -93,36 +99,53 @@
 			margin-top: 40px;
 			margin-bottom: 28px;
 			padding-left: 40px;
-			font-weight: 900;
 		}
 		
 		ul{
 			list-style: none;
-			margin-bottom:20px;
+			margin-bottom:10px;
 			li {
 				display:inline-block;
 				background-color: #F1F8FE;
 				width:50px;
 				text-align: center;
 				height:50px;
-				padding-top:16px;
+				padding-top:7px;
 				margin-right:10px;
 				font-weight: bold;
+				&.active {
+					background-color: #2b84d0;
+					a {
+					color:#fff;
+				}
+				}
+
+				a{
+					&:hover, &:active, &:focus {
+						background-color:transparent;
+					}
+
+				}
 
 			}
 		}
+		ul.nav {
+			margin-left:37px;
+		}
+		.last-ul {
+		margin-bottom: 40px !important;
+	}
 	}
 	.links-heading {
 		border-top: 1px solid #dadada;
 	}
 	.links {
+		padding-left:38px;
 		p {
-	    margin-bottom: 4px;
-	    padding-left: 40px;
-	    font-size: 16px;
-	    font-weight: 400
+			margin-bottom: 4px;
 		}
 	}
+
 }
 
 @media only screen and (max-width: 768px) {
